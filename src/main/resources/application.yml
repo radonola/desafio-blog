@@ -1,0 +1,12 @@
+# DataSource Configuration for PostgreSQL
+spring.datasource:
+  url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/blog-db?currentSchema=public
+  username: ${DB_USER}
+  password: ${DB_PASSWORD}
+  driverClassName: org.postgresql.Driver
+
+# JPA Configuration for PostgreSQL
+spring.jpa:
+    hibernate:
+      ddl-auto: update       
+        

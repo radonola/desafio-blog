@@ -15,4 +15,6 @@ public class PostWithIdDto {
 	
 	private String texto;
 	
+	private byte[] imagem;
+	
 }

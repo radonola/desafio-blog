@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -27,6 +28,10 @@ public class Post {
 	
 	@Column
 	private String texto;
+	
+	@Lob
+    @Column(name = "image_data")
+    private byte[] imageData;
 	
 	@ManyToOne
 	@JoinColumn(name = "usuario_id")

@@ -1,4 +1,6 @@
-package br.com.raissa.blog.dto;
+package br.com.raissa.blog.form;
+
+import org.springframework.web.multipart.MultipartFile;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +11,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PostDto {
+public class PostFormData {
 
 	private String texto;
+	
+	private MultipartFile image;
 	
 }
